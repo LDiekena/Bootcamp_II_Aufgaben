@@ -1,16 +1,15 @@
 package com.btcag.bootcamp;
 
 public class AOperation {
-    int wert1 = 5;
-    int wert2 = 5;
+    public static void main(String[] args) {
+        int wert = 0;
+        int wert1 = wert++;
+        int wert2 = ++wert;
 
-    while (wert1<10) {
+        //Anfangswert direkt
         System.out.println(wert1);
-        ++wert1;
+        //Anfangswert von Beginn an höher
+        System.out.println(wert2);
     }
 
-    while (wert2<10) {
-        System.out.println(wert2);
-        wert2++;
-    }
 }
