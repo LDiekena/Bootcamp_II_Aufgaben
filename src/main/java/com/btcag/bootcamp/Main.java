@@ -15,6 +15,7 @@ public class Main {
         */
 
         //Berechnung von Dezimalzahl in Binärzahl mit Modulo 2
+        /*
         Scanner sc = new Scanner(System.in);
         System.out.println("Bitte positive ganze Zahl zum Umrechnen eingeben: ");
         int dezimal = sc.nextInt();
@@ -25,8 +26,8 @@ public class Main {
             dezimal = dezimal/2;
             res = resModulo + res;
         }
-
         System.out.print("Die eingegebene Zahl entspricht im Binärsystem den Wert: " + res);
+        */
 
     }
 }
