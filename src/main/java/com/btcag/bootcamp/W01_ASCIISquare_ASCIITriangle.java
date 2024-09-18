@@ -22,27 +22,17 @@ public class W01_ASCIISquare_ASCIITriangle {
 
         }
 
-        System.out.println("Bitte gebe die Größe des umgekehrten Dreiecks an:");
+        System.out.println("Bitte gebe die Größe des Dreiecks an:");
         int groesseD = sc.nextInt();
-        int spaltenD = groesseD - 1;
-        int zeilenD = groesseD - 1;
 
-        //Umgekehrtes Dreieck
-        while (spaltenD >= 0) {
-            int i = zeilenD;
-            while (i > 0) {
-                System.out.print('*');
-                i--;
+        for (int i = 1; i <= groesseD; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
             }
-            zeilenD--;
-            System.out.println('*');
-            spaltenD--;
+            System.out.println(" ");
         }
 
-        /*
-        System.out.println("Bitte gebe die Größe des Dreiecks an:");
-        int groesseD2 = sc.nextInt();
-         */
+
 
 
 
