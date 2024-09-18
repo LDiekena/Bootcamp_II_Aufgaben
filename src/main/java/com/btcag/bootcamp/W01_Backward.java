@@ -14,17 +14,17 @@ public class W01_Backward {
         }
         System.out.println(resZKette);
 
-        /*
+
         System.out.println("Bitte gebe eine Zahl (Long) ein die du umdrehen möchtest:");
         long gZahl = sc.nextLong();
-        long resGZahl = 0;
+        String resGZahl = " ";
+        String sZahl = String.valueOf(gZahl);
 
-        while (gZahl>0) {
-            gZahl--;
-            resGZahl = gZahl + resGZahl;
+        for (int i = sZahl.length()-1; i >= 0; i--) {
+            resGZahl = resGZahl + sZahl.charAt(i);
         }
         System.out.println(resGZahl);
-        */
+
 
     }
 }
