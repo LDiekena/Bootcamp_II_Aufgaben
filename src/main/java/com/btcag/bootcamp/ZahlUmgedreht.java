@@ -24,7 +24,7 @@ public class ZahlUmgedreht {
             resGZahl = gZahl + resGZahl;
         }
         System.out.println(resGZahl);
+        */
 
-         */
     }
 }

@@ -7,17 +7,46 @@ public class ASCII_Kunst {
         Scanner sc = new Scanner(System.in);
         System.out.println("Bitte gebe die Größe des Vierecks an:");
         int groesseV = sc.nextInt();
-        int spalten = groesseV;
+        int spalten = groesseV - 1;
         int zeilen = groesseV;
 
-        while (spalten > 0) {
-            System.out.print("*");
+        //Viereck
+        while (spalten >= 0) {
+            int i = zeilen;
+            while (i > 0) {
+                System.out.print('*');
+                i--;
+            }
             spalten--;
+            System.out.println('*');
+
         }
 
-        while (zeilen > 0) {
-            System.out.println("*");
-            zeilen--;
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Bitte gebe die Größe des umgekehrten Dreiecks an:");
+        int groesseD = sc.nextInt();
+        int spaltenD = groesseD - 1;
+        int zeilenD = groesseD - 1;
+
+        //Umgekehrtes Dreieck
+        while (spaltenD >= 0) {
+            int i = zeilenD;
+            while (i > 0) {
+                System.out.print('*');
+                i--;
+            }
+            zeilenD--;
+            System.out.println('*');
+            spaltenD--;
         }
+
+        /*
+        Scanner sc3 = new Scanner(System.in);
+        System.out.println("Bitte gebe die Größe des Dreiecks an:");
+        int groesseD2 = sc.nextInt();
+         */
+
+
+
     }
 }
