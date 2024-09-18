@@ -2,7 +2,7 @@ package com.btcag.bootcamp;
 
 import java.util.Scanner;
 
-public class ZahlUmgedreht {
+public class W01_Backward {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Bitte gebe eine Zahl (String) ein die du umdrehen möchtest:");

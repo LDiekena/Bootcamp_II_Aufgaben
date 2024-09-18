@@ -2,7 +2,7 @@ package com.btcag.bootcamp;
 
 import java.util.Scanner;
 
-public class ASCII_Kunst {
+public class W01_ASCIISquare_ASCIITriangle {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Bitte gebe die Größe des Vierecks an:");
@@ -22,7 +22,6 @@ public class ASCII_Kunst {
 
         }
 
-        Scanner sc2 = new Scanner(System.in);
         System.out.println("Bitte gebe die Größe des umgekehrten Dreiecks an:");
         int groesseD = sc.nextInt();
         int spaltenD = groesseD - 1;
@@ -41,7 +40,6 @@ public class ASCII_Kunst {
         }
 
         /*
-        Scanner sc3 = new Scanner(System.in);
         System.out.println("Bitte gebe die Größe des Dreiecks an:");
         int groesseD2 = sc.nextInt();
          */

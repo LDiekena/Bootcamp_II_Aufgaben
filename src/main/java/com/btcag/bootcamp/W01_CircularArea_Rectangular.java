@@ -2,7 +2,7 @@ package com.btcag.bootcamp;
 
 import java.util.Scanner;
 
-public class KreisBerechnung {
+public class W01_CircularArea_Rectangular {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Bitte geben Sie den Radius für den zu berechnenden Kreis ein:");

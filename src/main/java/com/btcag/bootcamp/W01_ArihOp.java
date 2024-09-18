@@ -1,6 +1,6 @@
 package com.btcag.bootcamp;
 
-public class AOperation {
+public class W01_ArihOp {
     public static void main(String[] args) {
         int wert = 0;
         int wert1 = wert++;

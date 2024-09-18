@@ -2,7 +2,7 @@ package com.btcag.bootcamp;
 
 import java.util.Scanner;
 
-public class TestPrim {
+public class W01_PrimeTest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Bitte gebe eine Zahl ein die du testen möchtest:");

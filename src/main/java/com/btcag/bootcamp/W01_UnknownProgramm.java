@@ -2,7 +2,7 @@ package com.btcag.bootcamp;
 
 import java.util.Scanner;
 
-public class UnknownProgramm {
+public class W01_UnknownProgramm {
     public static void main(String[] args) {
         // Vor Programmdurchlauf
         /* Programm ließt zwei Werte als long Variable ein, initiiert eine result Variable mit 0, die Schleife

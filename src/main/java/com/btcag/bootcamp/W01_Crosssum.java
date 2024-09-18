@@ -2,7 +2,7 @@ package com.btcag.bootcamp;
 
 import java.util.Scanner;
 
-public class Quersumme {
+public class W01_Crosssum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long gZahl = sc.nextLong();
