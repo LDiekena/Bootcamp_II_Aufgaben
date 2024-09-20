@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class W01_ASCIIHourglass {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Bitte gebe die Größe des umgekehrten Dreiecks an:");
+        System.out.println("Bitte gebe die Größe der Sanduhr an:");
         int groesseD = sc.nextInt();
         int spaltenD = groesseD - 1;
         int zeilenD = groesseD - 1;
@@ -22,6 +22,7 @@ public class W01_ASCIIHourglass {
             spaltenD--;
         }
 
+       //unteres Dreieck
         for (int i = 1; i <= groesseD; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("*");
