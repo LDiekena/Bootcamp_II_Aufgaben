@@ -8,13 +8,14 @@ public class W01_Pi {
         System.out.print("Gib die Anzahl der Iterationen zur Annäherung von Pi ein: ");
 
         int iteration = sc.nextInt();
-        double res = 0;
+        double res = 0.0;
+        int zaehler = 0;
 
-        while (iteration > 0) {
-
-            iteration--;
+        while (zaehler < iteration) {
+            double formel = 4.0 / (2 * zaehler + 1);
+            res = res + (1 - 2 * (zaehler % 2)) * formel;
+            zaehler++;
         }
-
-        double pi = 4 * res;
+        System.out.println("Nach den " + iteration + " Iterationen wird Pi auf den Wert " + res + " angenähert.");
     }
 }
