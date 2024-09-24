@@ -7,15 +7,24 @@ public class W01_PrimeTest {
         Scanner sc = new Scanner(System.in);
         System.out.println("Bitte gebe eine Zahl ein die du testen möchtest:");
         int zahl = sc.nextInt();
+        int teiler = zahl - 1;
+        int zaehler = zahl - 1;
 
-        if (zahl >= 1) {
-            if (zahl/zahl == 1 && zahl%2 > 0) { //Abfrage noch nicht Korrekt
-                System.out.println("Die Zahl " + zahl + " ist eine Primzahl");
-            } else {
-                System.out.println("Die Zahl " + zahl + " ist keine Primzahl.");
+        while (zaehler > 1) {
+            int res = zahl % teiler;
+            teiler--;
+            zaehler--;
+
+            if (res == 0) {
+                zaehler = 0;
+                res = 1;
+                System.out.println("Die Zahl " + zahl + " ist keine Primzahl!");
+            } else if (zaehler == 2) {
+                zaehler = 1;
+                System.out.println("Die Zahl " + zahl + " ist eine Primzahl!");
             }
-        } else {
-            System.out.println("Die Zahl " + zahl + " ist nicht größer als 1");
         }
+
+
     }
 }
