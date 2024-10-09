@@ -52,7 +52,6 @@ public class W02_FourWins {
         boolean turnPlayer1 = true;
         int zugEingabe = 0;
 
-        //TODO: Siegesbedingungen überprüfen
         while (!spielfeldVoll() && !checkSieg(cyanChip) && !checkSieg(redChip)) {
             if (turnPlayer1 && !checkSieg(redChip)) {
                 System.out.println(cyan + player1 + farbReset + " ist dran. Bitte wähle die Spalte in die du deinen Chip einwerfen möchtest: ");
