@@ -15,8 +15,8 @@ public class W02_FourWins {
         Scanner sc = new Scanner(System.in);
         String player1 = " ";
         String player2 = " ";
-        String cyanChip = cyan + "●" + farbReset;
-        String redChip = red + "●" + farbReset;
+        String cyanChip = " [" + cyan + "●" + farbReset +"]" ;
+        String redChip =  " [" + red + "●" + farbReset + "]" ;
 
         while (player1.length() < 3 || player1.length() > 15) {
             System.out.println("Bitte gebe den Namen des ersten Spielers ein. Der Name darf nicht kürzer als drei oder" +
@@ -53,7 +53,7 @@ public class W02_FourWins {
         int zugEingabe = 0;
 
         //TODO: Siegesbedingungen überprüfen
-        while (!checkSieg(cyanChip) || !checkSieg(redChip) || !spielfeldVoll()) {
+        while (!spielfeldVoll() && !checkSieg(cyanChip) && !checkSieg(redChip)) {
             if (turnPlayer1 && !checkSieg(redChip)) {
                 System.out.println(cyan + player1 + farbReset + " ist dran. Bitte wähle die Spalte in die du deinen Chip einwerfen möchtest: ");
                 zugEingabe = sc.nextInt();
@@ -67,6 +67,11 @@ public class W02_FourWins {
                 turnPlayer1 = true;
                 printSpielfeld();
             }
+        }
+        if (checkSieg(redChip)) {
+            System.out.println(red + player2 + farbReset + " hat gewonnen!");
+        } else if (checkSieg(cyanChip)) {
+            System.out.println(cyan + player1 + farbReset + " hat gewonnen!");
         }
     }
 
@@ -84,7 +89,7 @@ public class W02_FourWins {
     public static void placeChip (int column, String chip) {
         for (int i = spielfeld.length - 1; i >= 0; i--) {
             if (spielfeld[i][column] == " [ ]") {
-                spielfeld[i][column] = " [" + chip + "]";
+                spielfeld[i][column] = chip;
                 return;
             }
         }
